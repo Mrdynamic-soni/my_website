@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+  <link rel = "icon" href = "https://www.clipartmax.com/png/middle/293-2939202_website-development-customisation-web-design-website-icon.png" type = "image/x-icon">
+    <title>Dynamic website</title>
+</head>
+<body>
+    {{>navbar}}
+    {{!-- hompage sectio strat --}}
+       <div class="container-fluid mt-5">
+           <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class ="row">
+                        <div class="col-md-6 col-12 hero-text order-md-0 order-1 mt-10">
+                            <h1 class="txt">WE WILL HELP YOU TO </h1>
+                            <h1 class="txt">GROW YOUR BUSINESS</h1>
+                            <p class="para-txt">We Are The Team Of <span class="bold-style">Professional Developers</span></p>
+                            <button class="btn-style btn-primary rounded-pill btn-success py-2 btn"> Read More</button>
+                        </div>
+                        {{!-- roght side --}}
+                         <div class="col-md-6 col-12 hero-img order-md-1 order-1">
+                             <figure>
+                                 <img src="https://img.freepik.com/free-vector/business-leader-standing-arrow-holding-flag-flat-vector-illustration-cartoon-people-training-doing-business-plan-leadership-victory-challenge-concept_74855-9812.jpg?size=626&ext=jpg&ga=GA1.2.1424838438.1639872000" alt="hero-section_image" clas="img-rounded">
+                             </figure>
+                        </div>
+
+                    </div>
+                </div>
+           </div>
+       </div>
+       {{!-- home page section end --}}
+     {{!-- About page start --}}
+     {{>about}}
+     {{>services}}
+     {{!-- about page ends --}}
+     {{>maps}}
+     {{>contact}}
+     {{>footer}}
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>

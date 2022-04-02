@@ -1,0 +1,46 @@
+.hero-text{
+    margin: 200px 0px 100px 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+  
+}
+
+.txt{
+    text-shadow: 2px 2px 5px #b3afaf;
+}
+.navbar-style{
+    background-color: #b3afaf;
+    box-shadow: 2px 4px 13px 1px rgba(8,8, 8, 0.04);
+}
+
+.btn{
+    /* box-shadow: 10px 10px 8px 10px #888888; */
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 10px 6px -6px #000;
+}
+.logo{
+    display: initial;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: rgb(30, 85, 8);
+    text-transform: capitalize;
+    text-shadow: 2px 5px 3px rgb(0, 0, 0,0.06);
+}
+.para-txt{
+    font-size: large;
+    font-weight: 500;
+    font-family:monospace;
+    
+}
+
+.box{
+    border: none;
+}
+
+.card:hover{
+    box-shadow: 0 0 25px 0 rgba(8,8, 8, 0.04);
+    cursor: pointer;
+}
+
