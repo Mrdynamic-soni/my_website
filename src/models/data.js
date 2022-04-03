@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-
 const validator = require("validator");
 
 const userSchema = mongoose.Schema({
@@ -8,7 +7,7 @@ const userSchema = mongoose.Schema({
         required:true,
         minLength:3
     },
-    Email:{
+    email:{
         type:String,
         required:true,
         validate(value){
@@ -30,6 +29,6 @@ const userSchema = mongoose.Schema({
 
 // create colection
 
-const User= mongoose.model("User",userSchema);
+const user_data= mongoose.model("user",userSchema);
 
-module.exports = User;
+module.exports = user_data;

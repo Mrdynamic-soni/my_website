@@ -2,7 +2,7 @@ const express = require("express");
 const path  = require("path");
 const hbs = require("hbs");
 const req = require("express/lib/request");
-const User = require("./models/data");
+const user_data = require("./models/data");
 require("./db/conn");
 
 const app = express();
@@ -30,11 +30,10 @@ app.get("/",(req,res)=>{
 
 app.post("/contact",async (req,res)=>{
     try{
-        // console.log(res.body);
-        // res.send(res.body); 
-        const userData = new User(req.body);
-        await userData.save();
-        req.status(201).render("index");
+        console.log(req.body);
+        const result = new user_data(req.body);
+        await result.save();
+        res.status(201).render("index");
     }catch(err){
         res.status(500).send(err);
     }
